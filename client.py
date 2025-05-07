@@ -22,7 +22,7 @@ def receive_loop(pdusock):
                 elif response.getValue("topic"):
                     print("\nCard Drawn:")
                     print(f"Topic: {response.getValue('topic')}")
-                    print(f"{response.getValue('left')}  \u2194  {response.getValue('right')}")
+                    print(f"{response.getValue('left')}  <->  {response.getValue('right')}")
                     print(f"Psychic: {response.getValue('psychic')}")
                 elif response.getValue("target_start"):
                     print("\n[Private Info] Target Range:", response.getValue("target_start"), "-", response.getValue("target_end"))
@@ -43,7 +43,7 @@ def receive_loop(pdusock):
                     if val:
                         print(f"{k}: {val}")
             elif t == WAVEREQ.ENDG:
-                print("\n\U0001F3C1 Game Over")
+                print("\n Game Over")
                 print(f"Winner: {response.getValue('winner')}")
                 game_started = False
                 break
