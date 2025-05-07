@@ -52,8 +52,8 @@ def receive_loop(pdusock):
 
 def main():
     global game_started
-    host = input("Enter host (e.g., localhost): ")
-    port = int(input("Enter port (e.g., 50000): "))
+    host = input("Enter host: ")
+    port = int(input("Enter port: "))
     username = input("Enter your username: ")
 
     while True:
