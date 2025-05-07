@@ -4,8 +4,8 @@ from model import GameManager
 from shmessage import shmessage, WAVEREQ
 from shpdu import shpdu
 
-HOST = '0.0.0.0'
-PORT = 12345
+HOST = 'localhost'
+PORT = 50000
 game_manager = GameManager()
 clients = []
 
