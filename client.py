@@ -22,7 +22,7 @@ def receive_loop(pdusock):
                 elif response.getValue("topic"):
                     print("\nCard Drawn:")
                     print(f"Topic: {response.getValue('topic')}")
-                    print(f"{response.getValue('left')}  <->  {response.getValue('right')}")
+                    print(f"{response.getValue('left')} {response.getValue('right')}")
                     print(f"Psychic: {response.getValue('psychic')}")
                 elif response.getValue("target_start"):
                     print("\n[Private Info] Target Range:", response.getValue("target_start"), "-", response.getValue("target_end"))
